@@ -1,9 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: .
     destination: /var/www/html/
     overwrite: true
+    fileExistsBehavior: OVERWRITE
+
 hooks:
   AfterInstall:
     - location: scripts/restart_server.sh
