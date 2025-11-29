@@ -1,8 +1,9 @@
 version: 0.0
 os: linux
+
 files:
-  - source: website
-    destination: /var/www/html/website/
+  - source: website/
+    destination: /var/www/html/
     overwrite: true
     fileExistsBehavior: OVERWRITE
 
